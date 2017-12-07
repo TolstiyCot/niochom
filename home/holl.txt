@@ -13,8 +13,8 @@ musor
 					       /  \
 					      /    \
 					     /      \
-						()
-
+						()   |
+						    |
 
 mnogo musora
 
