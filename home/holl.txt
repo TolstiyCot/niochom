@@ -9,8 +9,11 @@ musor
 
 
 
-
-
+						/\
+					       /  \
+					      /    \
+					     /      \
+						()
 
 
 mnogo musora
