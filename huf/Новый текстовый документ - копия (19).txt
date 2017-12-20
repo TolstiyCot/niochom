@@ -1,4 +1,14 @@
-string mailTo = ((Config.GetSetting("AdminNotifications_EmailAddress") == null) ||
-(Config.GetSetting("AdminNotifications_EmailAddress").Length <= 0))?
-Globals.GetHostPortalSettings().HostSettings["SMTPPassword"].ToString():
-Config.GetSetting("AdminNotifications_EmailAddress");
+string mailTo = getMail();
+
+static string getMail()
+{
+    string check = Config.GetSetting("AdminNotifications_EmailAddress");
+    if (check != null)
+    {
+        return check;
+    }
+    else
+    {
+        return Globals.GetHostPortalSettings().HostSettings["SMTPPassword"].ToString();
+    }
+}
